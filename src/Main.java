@@ -4,9 +4,12 @@ public class Main {
 
     Dado dado = new Dado();
     Tabuleiro tabuleiro = new Tabuleiro();
-    for(int i =0; i<20; i++){
-        System.out.println(dado.joga());
-    }
-
+    tabuleiro.preenche();
+    System.out.println(tabuleiro.printTab());
+    tabuleiro.colocaOuRetiraBola(2);
+    tabuleiro.colocaOuRetiraBola(1);
+    tabuleiro.colocaOuRetiraBola(6);
+    tabuleiro.colocaOuRetiraBola(6);
+    tabuleiro.colocaOuRetiraBola(4);System.out.println(tabuleiro.printTab());
     }
 }

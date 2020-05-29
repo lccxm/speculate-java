@@ -4,14 +4,16 @@ public class Tabuleiro {
     private int casa6;
 
     public Tabuleiro(){
-        casas = new boolean[4];
+        casas = new boolean[5];
         casa6 = 0;
     }
 
     public void preenche(){
         // 1 3 5
         for(int i = 0; i<=casas.length-1; i++){
-            if (i == 0 || i== 2 || i == 4){
+            if (i == 0 || i == 2 || i == 4){
+                casas[i] = true;
+            }else{
                 casas[i] = false;
             }
         }
