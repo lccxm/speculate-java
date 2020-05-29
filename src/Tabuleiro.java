@@ -24,7 +24,7 @@ public class Tabuleiro {
     public String printCasa(int i){
         String casa = "";
         if(i == 6) {
-            casa = String.valueOf(i);
+            casa = "["+String.valueOf(casa6)+"]";
         }else{
             i -= 1;
             if(temBola(i)){
@@ -43,6 +43,14 @@ public class Tabuleiro {
     public void inverteCasa(int i){
         i -= 1;
         casas[i] = !casas[i];
+    }
+
+    public void colocaOuRetiraBola(int i){
+        if(i == 6){
+            casa6 += 1;
+        }else{
+            inverteCasa(i);
+        }
     }
 
 }
