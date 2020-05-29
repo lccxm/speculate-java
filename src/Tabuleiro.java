@@ -9,9 +9,9 @@ public class Tabuleiro {
     }
 
     public void preenche(){
-        // 1 3 5
+        // preenche as casas 1 3 5
         for(int i = 0; i<=casas.length-1; i++){
-            if (i == 0 || i == 2 || i == 4){
+            if (i%2 == 0){
                 casas[i] = true;
             }else{
                 casas[i] = false;
