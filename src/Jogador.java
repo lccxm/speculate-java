@@ -10,6 +10,7 @@ public class Jogador {
         ganhou = false;
     }
 
+
     public String getNome(){
         return nome;
     }
