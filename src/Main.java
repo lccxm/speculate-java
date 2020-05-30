@@ -8,5 +8,7 @@ public class Main {
     Tabuleiro tabuleiro = new Tabuleiro();
     tabuleiro.preenche();
     System.out.println(tabuleiro.printTab());
+    tabuleiro.colocaOuRetiraBola(4);
+    System.out.println(tabuleiro.printTab());
     }
 }
